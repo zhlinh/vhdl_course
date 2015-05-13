@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CHK_3BIT
-Wed May 13 09:37:34 2015
+Wed May 13 11:42:35 2015
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Full Version
 
 
@@ -14,11 +14,10 @@ Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Full Version
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |CHK_3BIT|PRESENT_STATE
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  9. General Register Statistics
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -45,16 +44,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed May 13 09:37:34 2015       ;
+; Analysis & Synthesis Status        ; Successful - Wed May 13 11:42:35 2015       ;
 ; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Full Version ;
 ; Revision Name                      ; CHK_3BIT                                    ;
 ; Top-level Entity Name              ; CHK_3BIT                                    ;
 ; Family                             ; Cyclone IV GX                               ;
-; Total logic elements               ; 3                                           ;
-;     Total combinational functions  ; 3                                           ;
-;     Dedicated logic registers      ; 3                                           ;
-; Total registers                    ; 3                                           ;
-; Total pins                         ; 4                                           ;
+; Total logic elements               ; 21                                          ;
+;     Total combinational functions  ; 20                                          ;
+;     Dedicated logic registers      ; 15                                          ;
+; Total registers                    ; 15                                          ;
+; Total pins                         ; 7                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -183,12 +182,12 @@ agreement for further details.
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 4                ;
+; I/O pins                 ; 7                ;
 ; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; DIN~input        ;
-; Maximum fan-out          ; 3                ;
-; Total fan-out            ; 21               ;
-; Average fan-out          ; 1.50             ;
+; Maximum fan-out node     ; CLK~input        ;
+; Maximum fan-out          ; 15               ;
+; Total fan-out            ; 119              ;
+; Average fan-out          ; 2.43             ;
 +--------------------------+------------------+
 
 
@@ -197,32 +196,33 @@ agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |CHK_3BIT                  ; 3 (3)             ; 3 (3)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 4    ; 0            ; |CHK_3BIT           ; work         ;
+; |CHK_3BIT                  ; 20 (20)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 7    ; 0            ; |CHK_3BIT           ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+----------------------------------------------------------------------------------------------+
-; State Machine - |CHK_3BIT|PRESENT_STATE                                                      ;
-+------------------+------------------+------------------+------------------+------------------+
-; Name             ; PRESENT_STATE.S4 ; PRESENT_STATE.S3 ; PRESENT_STATE.S2 ; PRESENT_STATE.S1 ;
-+------------------+------------------+------------------+------------------+------------------+
-; PRESENT_STATE.S1 ; 0                ; 0                ; 0                ; 0                ;
-; PRESENT_STATE.S2 ; 0                ; 0                ; 1                ; 1                ;
-; PRESENT_STATE.S3 ; 0                ; 1                ; 0                ; 1                ;
-; PRESENT_STATE.S4 ; 1                ; 0                ; 0                ; 1                ;
-+------------------+------------------+------------------+------------------+------------------+
-
-
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; PRESENT_STATE.S2                      ; Lost fanout        ;
-; Total Number of Removed Registers = 1 ;                    ;
-+---------------------------------------+--------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |CHK_3BIT|PRESENT_STATE                                                                                                                                                                                                                                                                              ;
++-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; Name              ; PRESENT_STATE.S15 ; PRESENT_STATE.S14 ; PRESENT_STATE.S13 ; PRESENT_STATE.S12 ; PRESENT_STATE.S11 ; PRESENT_STATE.S10 ; PRESENT_STATE.S9 ; PRESENT_STATE.S8 ; PRESENT_STATE.S7 ; PRESENT_STATE.S6 ; PRESENT_STATE.S5 ; PRESENT_STATE.S4 ; PRESENT_STATE.S3 ; PRESENT_STATE.S2 ; PRESENT_STATE.S1 ;
++-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
+; PRESENT_STATE.S1  ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ;
+; PRESENT_STATE.S2  ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 1                ;
+; PRESENT_STATE.S3  ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 1                ;
+; PRESENT_STATE.S4  ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 1                ;
+; PRESENT_STATE.S5  ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 1                ;
+; PRESENT_STATE.S6  ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; PRESENT_STATE.S7  ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; PRESENT_STATE.S8  ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; PRESENT_STATE.S9  ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 1                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; PRESENT_STATE.S10 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 1                 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; PRESENT_STATE.S11 ; 0                 ; 0                 ; 0                 ; 0                 ; 1                 ; 0                 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; PRESENT_STATE.S12 ; 0                 ; 0                 ; 0                 ; 1                 ; 0                 ; 0                 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; PRESENT_STATE.S13 ; 0                 ; 0                 ; 1                 ; 0                 ; 0                 ; 0                 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; PRESENT_STATE.S14 ; 0                 ; 1                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
+; PRESENT_STATE.S15 ; 1                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                 ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 0                ; 1                ;
++-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+-------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+------------------+
 
 
 +------------------------------------------------------+
@@ -230,10 +230,10 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 3     ;
+; Total registers                              ; 15    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 3     ;
+; Number of registers using Asynchronous Clear ; 15    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
@@ -245,16 +245,17 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 4                           ;
-; cycloneiii_ff         ; 3                           ;
-;     CLR               ; 3                           ;
-; cycloneiii_lcell_comb ; 3                           ;
-;     normal            ; 3                           ;
-;         2 data inputs ; 2                           ;
+; boundary_port         ; 7                           ;
+; cycloneiii_ff         ; 15                          ;
+;     CLR               ; 15                          ;
+; cycloneiii_lcell_comb ; 20                          ;
+;     normal            ; 20                          ;
+;         2 data inputs ; 6                           ;
 ;         3 data inputs ; 1                           ;
+;         4 data inputs ; 13                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.78                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.61                        ;
 +-----------------------+-----------------------------+
 
 
@@ -273,24 +274,34 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Full Version
-    Info: Processing started: Wed May 13 09:37:30 2015
+    Info: Processing started: Wed May 13 11:42:31 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CHK_3BIT -c CHK_3BIT
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file chk_3bit.vhd
     Info (12022): Found design unit 1: CHK_3BIT-ART1
     Info (12023): Found entity 1: CHK_3BIT
+Info (12021): Found 2 design units, including 1 entities, in source file simulation/modelsim/tb_chk_3bit.vhd
+    Info (12022): Found design unit 1: TB_CHK_3BIT-TEXTIO_WAY
+    Info (12023): Found entity 1: TB_CHK_3BIT
 Info (12127): Elaborating entity "CHK_3BIT" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at CHK_3BIT.vhd(74): signal "CHOSEN_SEQ" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CHK_3BIT.vhd(80): signal "CHOSEN_SEQ" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CHK_3BIT.vhd(86): signal "CHOSEN_SEQ" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CHK_3BIT.vhd(92): signal "CHOSEN_SEQ" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CHK_3BIT.vhd(98): signal "CHOSEN_SEQ" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CHK_3BIT.vhd(104): signal "CHOSEN_SEQ" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CHK_3BIT.vhd(110): signal "CHOSEN_SEQ" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at CHK_3BIT.vhd(116): signal "CHOSEN_SEQ" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 7 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
+Info (21057): Implemented 28 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 3 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 639 megabytes
-    Info: Processing ended: Wed May 13 09:37:34 2015
+    Info (21061): Implemented 21 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 635 megabytes
+    Info: Processing ended: Wed May 13 11:42:35 2015
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 

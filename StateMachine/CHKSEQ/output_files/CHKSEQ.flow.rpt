@@ -1,5 +1,5 @@
 Flow report for CHKSEQ
-Sun May 10 20:34:17 2015
+Wed May 13 11:56:30 2015
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Full Version
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun May 10 20:34:17 2015       ;
+; Flow Status                        ; Successful - Wed May 13 11:56:30 2015       ;
 ; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Full Version ;
 ; Revision Name                      ; CHKSEQ                                      ;
 ; Top-level Entity Name              ; CHKSEQ                                      ;
@@ -69,7 +69,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/10/2015 19:19:02 ;
+; Start date & time ; 05/13/2015 11:56:06 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CHKSEQ              ;
 +-------------------+---------------------+
@@ -80,7 +80,7 @@ agreement for further details.
 +--------------------------------------+-----------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                             ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+-----------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 1095612681366.143125674205192     ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 1095612681366.143148936610112     ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                ; --            ; --          ; TB_CHKSEQ      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; TB_CHKSEQ                         ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                              ; --            ; --          ; eda_simulation ;
@@ -90,7 +90,6 @@ agreement for further details.
 ; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/TB_CHKSEQ.vhd ; --            ; --          ; TB_CHKSEQ      ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; TB_CHKSEQ                         ; --            ; --          ; TB_CHKSEQ      ;
 ; EDA_TEST_BENCH_NAME                  ; TB_CHKSEQ                         ; --            ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 550 ns                            ; --            ; --          ; TB_CHKSEQ      ;
 ; PARTITION_COLOR                      ; 16764057                          ; --            ; --          ; Top            ;
 ; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING             ; --            ; --          ; Top            ;
 ; PARTITION_NETLIST_TYPE               ; SOURCE                            ; --            ; --          ; Top            ;
@@ -103,13 +102,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 616 MB              ; 00:00:03                           ;
-; Fitter                    ; 00:00:07     ; 1.1                     ; 1025 MB             ; 00:00:08                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 535 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 532 MB              ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 483 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 494 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:19     ; --                      ; --                  ; 00:00:18                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 622 MB              ; 00:00:03                           ;
+; Fitter                    ; 00:00:08     ; 1.1                     ; 1034 MB             ; 00:00:08                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 541 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 534 MB              ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 489 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:15     ; --                      ; --                  ; 00:00:17                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -123,7 +121,6 @@ agreement for further details.
 ; Assembler                 ; Monet-PC         ; Windows 7 ; 6.1        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; Monet-PC         ; Windows 7 ; 6.1        ; x86_64         ;
 ; EDA Netlist Writer        ; Monet-PC         ; Windows 7 ; 6.1        ; x86_64         ;
-; EDA Netlist Writer        ; Monet-PC         ; Windows 7 ; 6.1        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -135,7 +132,6 @@ quartus_fit --read_settings_files=off --write_settings_files=off CHKSEQ -c CHKSE
 quartus_asm --read_settings_files=off --write_settings_files=off CHKSEQ -c CHKSEQ
 quartus_sta CHKSEQ -c CHKSEQ
 quartus_eda --read_settings_files=off --write_settings_files=off CHKSEQ -c CHKSEQ
-quartus_eda --read_settings_files=on --write_settings_files=off CHKSEQ -c CHKSEQ --gen_testbench
 
 
 

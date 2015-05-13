@@ -1,5 +1,5 @@
 EDA Netlist Writer report for CHKSEQ
-Sun May 10 20:34:17 2015
+Wed May 13 11:56:30 2015
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Full Version
 
 
@@ -8,7 +8,9 @@ Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Full Version
 ---------------------
   1. Legal Notice
   2. EDA Netlist Writer Summary
-  3. EDA Netlist Writer Messages
+  3. Simulation Settings
+  4. Simulation Generated Files
+  5. EDA Netlist Writer Messages
 
 
 
@@ -35,11 +37,50 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun May 10 20:34:17 2015 ;
+; EDA Netlist Writer Status ; Successful - Wed May 13 11:56:30 2015 ;
 ; Revision Name             ; CHKSEQ                                ;
 ; Top-level Entity Name     ; CHKSEQ                                ;
 ; Family                    ; Cyclone IV GX                         ;
+; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                        ;
++---------------------------------------------------------------------------------------------------+------------------------+
+; Option                                                                                            ; Setting                ;
++---------------------------------------------------------------------------------------------------+------------------------+
+; Tool Name                                                                                         ; ModelSim-Altera (VHDL) ;
+; Generate netlist for functional simulation only                                                   ; Off                    ;
+; Time scale                                                                                        ; 1 ps                   ;
+; Truncate long hierarchy paths                                                                     ; Off                    ;
+; Map illegal HDL characters                                                                        ; Off                    ;
+; Flatten buses into individual nodes                                                               ; Off                    ;
+; Maintain hierarchy                                                                                ; Off                    ;
+; Bring out device-wide set/reset signals as ports                                                  ; Off                    ;
+; Enable glitch filtering                                                                           ; Off                    ;
+; Do not write top level VHDL entity                                                                ; Off                    ;
+; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                    ;
+; Architecture name in VHDL output netlist                                                          ; structure              ;
+; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                    ;
+; Generate third-party EDA tool command script for gate-level simulation                            ; Off                    ;
++---------------------------------------------------------------------------------------------------+------------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                ;
++-------------------------------------------------------------------------------------------+
+; Generated Files                                                                           ;
++-------------------------------------------------------------------------------------------+
+; E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/CHKSEQ_6_1200mv_85c_slow.vho      ;
+; E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/CHKSEQ_6_1200mv_0c_slow.vho       ;
+; E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/CHKSEQ_min_1200mv_0c_fast.vho     ;
+; E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/CHKSEQ.vho                        ;
+; E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/CHKSEQ_6_1200mv_85c_vhd_slow.sdo  ;
+; E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/CHKSEQ_6_1200mv_0c_vhd_slow.sdo   ;
+; E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/CHKSEQ_min_1200mv_0c_vhd_fast.sdo ;
+; E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/CHKSEQ_vhd.sdo                    ;
++-------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -48,13 +89,20 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Full Version
-    Info: Processing started: Sun May 10 20:34:15 2015
-Info: Command: quartus_eda --read_settings_files=on --write_settings_files=off CHKSEQ -c CHKSEQ --gen_testbench
-Info (201002): Generated VHDL Test Bench File E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/CHKSEQ.vht for simulation
+    Info: Processing started: Wed May 13 11:56:29 2015
+Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off CHKSEQ -c CHKSEQ
+Info (204019): Generated file CHKSEQ_6_1200mv_85c_slow.vho in folder "E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file CHKSEQ_6_1200mv_0c_slow.vho in folder "E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file CHKSEQ_min_1200mv_0c_fast.vho in folder "E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file CHKSEQ.vho in folder "E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file CHKSEQ_6_1200mv_85c_vhd_slow.sdo in folder "E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file CHKSEQ_6_1200mv_0c_vhd_slow.sdo in folder "E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file CHKSEQ_min_1200mv_0c_vhd_fast.sdo in folder "E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file CHKSEQ_vhd.sdo in folder "E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 494 megabytes
-    Info: Processing ended: Sun May 10 20:34:17 2015
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 500 megabytes
+    Info: Processing ended: Wed May 13 11:56:30 2015
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

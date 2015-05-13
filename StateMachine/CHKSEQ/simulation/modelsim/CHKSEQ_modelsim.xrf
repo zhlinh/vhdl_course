@@ -1,5 +1,5 @@
 vendor_name = ModelSim
-source_file = 1, E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/CHKSEQ.vht
+source_file = 1, E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/TB_CHKSEQ.vhd
 source_file = 1, E:/Project/VHDL/StateMachine/CHKSEQ/CHKSEQ.vhd
 source_file = 1, E:/Project/VHDL/StateMachine/CHKSEQ/db/CHKSEQ.cbx.xml
 source_file = 1, d:/altera/14.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
