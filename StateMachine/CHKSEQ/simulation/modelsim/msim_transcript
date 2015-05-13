@@ -1,0 +1,48 @@
+# Reading D:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do CHKSEQ_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {E:/Project/VHDL/StateMachine/CHKSEQ/CHKSEQ.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CHKSEQ
+# -- Compiling architecture ART of CHKSEQ
+# 
+# vcom -93 -work work {E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/TB_CHKSEQ.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity TB_CHKSEQ
+# -- Compiling architecture DIRECT_WAY of TB_CHKSEQ
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs="+acc"  TB_CHKSEQ
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs=\"+acc\" -t 1ps TB_CHKSEQ 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.tb_chkseq(direct_way)
+# Loading work.chkseq(art)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit 
+# Break in Process GIVEN_SEQ_PROCESS at E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/TB_CHKSEQ.vhd line 32

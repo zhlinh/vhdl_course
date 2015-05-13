@@ -1,0 +1,48 @@
+# Reading D:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do ENCODER_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {E:/Project/VHDL/ENCODER/ENCODER.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity ENCODER
+# -- Compiling architecture ART1 of ENCODER
+# -- Compiling architecture ART2 of ENCODER
+# -- Loading entity ENCODER
+# -- Compiling architecture ART3 of ENCODER
+# -- Loading entity ENCODER
+# 
+vsim work.encoder -t 1ns
+# vsim -t 1ns work.encoder 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading work.encoder(art3)
+add wave /encoder/* 
+force A 1
+force B 0
+force C 0
+force D 0
+force E 0
+forece F 0
+# invalid command name "forece"
+force F 0
+force G 0
+force H 0
+force B 1 100
+rn 200
+# invalid command name "rn"
+run 200
+quit -f

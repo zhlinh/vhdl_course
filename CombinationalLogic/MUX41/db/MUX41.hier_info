@@ -1,0 +1,14 @@
+|MUX41
+X[0] => Y.DATAB
+X[1] => Y.DATAB
+X[2] => Y.DATAB
+X[3] => Y.DATAA
+A => Equal0.IN1
+A => Equal1.IN1
+A => Equal2.IN1
+B => Equal0.IN0
+B => Equal1.IN0
+B => Equal2.IN0
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

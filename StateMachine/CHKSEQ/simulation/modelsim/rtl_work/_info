@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Project\VHDL\StateMachine\CHKSEQ\simulation\modelsim
+Echkseq
+Z1 w1431141008
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dE:\Project\VHDL\StateMachine\CHKSEQ\simulation\modelsim
+Z5 8E:/Project/VHDL/StateMachine/CHKSEQ/CHKSEQ.vhd
+Z6 FE:/Project/VHDL/StateMachine/CHKSEQ/CHKSEQ.vhd
+l0
+L3
+V^Q=<HQd0@HYdA5THiLBV71
+Z7 OV;C;10.1e;51
+31
+Z8 !s108 1431261987.658000
+Z9 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/CHKSEQ/CHKSEQ.vhd|
+Z10 !s107 E:/Project/VHDL/StateMachine/CHKSEQ/CHKSEQ.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 9894lVh=lmZg6^7<Ue2`U3
+!i10b 1
+Aart
+R2
+R3
+DEx4 work 6 chkseq 0 22 ^Q=<HQd0@HYdA5THiLBV71
+l11
+L8
+VMDMD2nNAHeE883bXEN;5X0
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 J?PJmHl?BRan2cf9Y=k7e3
+!i10b 1
+Etb_chkseq
+Z13 w1431261097
+Z14 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z15 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R2
+R3
+R4
+Z16 8E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/TB_CHKSEQ.vhd
+Z17 FE:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/TB_CHKSEQ.vhd
+l0
+L4
+VWPgKeUP?V85iGl4ja[@Y23
+!s100 dLQXo0ePYlm[E3do;lDEf0
+R7
+31
+!i10b 1
+Z18 !s108 1431261988.008000
+Z19 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/TB_CHKSEQ.vhd|
+Z20 !s107 E:/Project/VHDL/StateMachine/CHKSEQ/simulation/modelsim/TB_CHKSEQ.vhd|
+R11
+R12
+Adirect_way
+R14
+R15
+R2
+R3
+DEx4 work 9 tb_chkseq 0 22 WPgKeUP?V85iGl4ja[@Y23
+l16
+L6
+VEIEzI[6zTTY1EDSG?AlKF1
+!s100 Rge7zJ;CdAMlBnQdLH3Qi0
+R7
+31
+!i10b 1
+R18
+R19
+R20
+R11
+R12

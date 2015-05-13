@@ -1,0 +1,31 @@
+--8线-3线优先编码器。A的编码等级最低
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+ENTITY ENCODER IS
+	PORT(A,B,C,D,E,F,G,H:IN STD_LOGIC;
+		Y0,Y1,Y2:OUT STD_LOGIC);
+END ENTITY ENCODER;
+--使用条件赋值语句
+ARCHITECTURE ART1 OF ENCODER IS
+		SIGNAL SY:STD_LOGIC_VECTOR(2 DOWNTO 0);
+		BEGIN
+		--优先级在此处体现，哈哈
+		SY(2 DOWNTO 0)<="111" WHEN H='1' ELSE
+							 "110" WHEN G='1' ELSE
+							 "101" WHEN F='1' ELSE
+							 "100" WHEN E='1' ELSE
+							 "011" WHEN D='1' ELSE
+							 "010" WHEN C='1' ELSE
+							 "001" WHEN B='1' ELSE
+							 "000" WHEN A='1' ELSE
+							 "XXX";
+		Y0<=SY(0);
+		Y1<=SY(1);
+		Y2<=SY(2);
+END ARCHITECTURE ART1;
+--使用LOOP语句
+
+		
+							 
+							 

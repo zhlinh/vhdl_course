@@ -1,0 +1,46 @@
+# Reading D:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do CHK_3BIT_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {E:/Project/VHDL/StateMachine/CHK_3BIT/CHK_3BIT.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CHK_3BIT
+# -- Compiling architecture ART1 of CHK_3BIT
+# 
+# vcom -93 -work work {E:/Project/VHDL/StateMachine/CHK_3BIT/simulation/modelsim/TB_CHK_3BIT.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Compiling entity TB_CHK_3BIT
+# -- Compiling architecture TEXTIO_WAY of TB_CHK_3BIT
+# ** Warning: E:/Project/VHDL/StateMachine/CHK_3BIT/simulation/modelsim/TB_CHK_3BIT.vhd(10): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs="+acc"  TB_CHK_3BIT
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs=\"+acc\" -t 1ps TB_CHK_3BIT 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.tb_chk_3bit(textio_way)
+# Loading work.chk_3bit(art1)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 400 ns

@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Thu Apr 09 15:34:30 2015
+Quartus II 64-Bit Version : 14.1.0 Build 186 12/03/2014 SJ Full Version
+Revision Name : DECODER
+Top-level Entity Name : DECODER
+Family : Cyclone IV GX
+Total logic elements : 8
+    Total combinational functions : 8
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 11
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

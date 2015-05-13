@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Project\VHDL\StateMachine\CHK_3BIT\simulation\modelsim
+Echk_3bit
+Z1 w1431274312
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dE:\Project\VHDL\StateMachine\CHK_3BIT\simulation\modelsim
+Z5 8E:/Project/VHDL/StateMachine/CHK_3BIT/CHK_3BIT.vhd
+Z6 FE:/Project/VHDL/StateMachine/CHK_3BIT/CHK_3BIT.vhd
+l0
+L3
+VVz@zoCcK0nVEhg@i[cDK32
+Z7 OV;C;10.1e;51
+31
+Z8 !s108 1431307099.459000
+Z9 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/CHK_3BIT/CHK_3BIT.vhd|
+Z10 !s107 E:/Project/VHDL/StateMachine/CHK_3BIT/CHK_3BIT.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 5=AF6]U?ZFmJzi?AJlS[e0
+!i10b 1
+Aart1
+R2
+R3
+DEx4 work 8 chk_3bit 0 22 Vz@zoCcK0nVEhg@i[cDK32
+l11
+L8
+VO=[M5omP6iLW^lMK>K@6?3
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 6X`A7m]3;<a5N[B7;cQcm2
+!i10b 1
+Etb_chk_3bit
+Z13 w1431275038
+Z14 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R3
+R2
+R4
+Z15 8E:/Project/VHDL/StateMachine/CHK_3BIT/simulation/modelsim/TB_CHK_3BIT.vhd
+Z16 FE:/Project/VHDL/StateMachine/CHK_3BIT/simulation/modelsim/TB_CHK_3BIT.vhd
+l0
+L6
+V<DMZ7PLU:[kg=1fJaUCCb1
+!s100 mYLV[OI:nH`H6fdKZe:mQ3
+R7
+31
+!i10b 1
+Z17 !s108 1431307099.707000
+Z18 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/CHK_3BIT/simulation/modelsim/TB_CHK_3BIT.vhd|
+Z19 !s107 E:/Project/VHDL/StateMachine/CHK_3BIT/simulation/modelsim/TB_CHK_3BIT.vhd|
+R11
+R12
+Atextio_way
+R14
+R3
+R2
+DEx4 work 11 tb_chk_3bit 0 22 <DMZ7PLU:[kg=1fJaUCCb1
+l24
+L9
+Vhamf2zCJlOeVSXAeLQMkJ3
+!s100 @GAY=kWRCc3c1>jIdRlIc1
+R7
+31
+!i10b 1
+R17
+R18
+R19
+R11
+R12

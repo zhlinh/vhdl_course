@@ -1,0 +1,31 @@
+|MUXB41
+DATA0[0] => Mux3.IN0
+DATA0[1] => Mux2.IN0
+DATA0[2] => Mux1.IN0
+DATA0[3] => Mux0.IN0
+DATA1[0] => Mux3.IN1
+DATA1[1] => Mux2.IN1
+DATA1[2] => Mux1.IN1
+DATA1[3] => Mux0.IN1
+DATA2[0] => Mux3.IN2
+DATA2[1] => Mux2.IN2
+DATA2[2] => Mux1.IN2
+DATA2[3] => Mux0.IN2
+DATA3[0] => Mux3.IN3
+DATA3[1] => Mux2.IN3
+DATA3[2] => Mux1.IN3
+DATA3[3] => Mux0.IN3
+A => Mux0.IN5
+A => Mux1.IN5
+A => Mux2.IN5
+A => Mux3.IN5
+B => Mux0.IN4
+B => Mux1.IN4
+B => Mux2.IN4
+B => Mux3.IN4
+Y[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,26 @@
+--双向总线缓存器，有两个数据输入/输出端A和B，一个方向控制端DIR和一个选通端EN。
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+ENTITY BIDIR IS
+    PORT(A,B:INOUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+        EN,DIR:IN STD_LOGIC);
+END ENTITY;
+ARCHITECTURE ART OF BIDIR IS
+    SIGNAL AOUT,BOUT:STD_LOGIC_VECTOR(7 DOWNTO 0);
+    BEGIN
+    PROCESS(A,EN,DIR) IS
+        BEGIN
+        IF((EN='0') AND (DIR='1')) THEN BOUT<=A;
+        ELSE BOUT<="ZZZZZZZZ";
+        END IF;
+        B<=BOUT;
+    END PORCESS;
+    PROCESS(B,EN,DIR) IS
+        BEGIN
+            IF((EN='0') AND (DIR='1')) THEN AOUT<=B;
+            ELSE AOUT<="ZZZZZZZZ";
+            END IF;
+            A<=AOUT;
+    END PROCESS;
+END ARCHITECTURE ART;
+        
