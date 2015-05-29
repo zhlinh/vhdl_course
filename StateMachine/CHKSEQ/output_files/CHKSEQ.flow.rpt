@@ -1,5 +1,5 @@
 Flow report for CHKSEQ
-Wed May 13 11:56:30 2015
+Thu May 14 08:55:19 2015
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Full Version
 
 
@@ -41,7 +41,7 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed May 13 11:56:30 2015       ;
+; Flow Status                        ; Successful - Thu May 14 08:55:19 2015       ;
 ; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Full Version ;
 ; Revision Name                      ; CHKSEQ                                      ;
 ; Top-level Entity Name              ; CHKSEQ                                      ;
@@ -69,7 +69,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/13/2015 11:56:06 ;
+; Start date & time ; 05/14/2015 08:54:52 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CHKSEQ              ;
 +-------------------+---------------------+
@@ -80,7 +80,7 @@ agreement for further details.
 +--------------------------------------+-----------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                             ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+-----------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 1095612681366.143148936610112     ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 1099016981909.143156489206928     ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                ; --            ; --          ; TB_CHKSEQ      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; TB_CHKSEQ                         ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                              ; --            ; --          ; eda_simulation ;
@@ -102,12 +102,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 622 MB              ; 00:00:03                           ;
-; Fitter                    ; 00:00:08     ; 1.1                     ; 1034 MB             ; 00:00:08                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 541 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 534 MB              ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 489 MB              ; 00:00:01                           ;
-; Total                     ; 00:00:15     ; --                      ; --                  ; 00:00:17                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 618 MB              ; 00:00:03                           ;
+; Fitter                    ; 00:00:10     ; 1.1                     ; 1019 MB             ; 00:00:08                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 537 MB              ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 534 MB              ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 485 MB              ; 00:00:01                           ;
+; Total                     ; 00:00:18     ; --                      ; --                  ; 00:00:17                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
