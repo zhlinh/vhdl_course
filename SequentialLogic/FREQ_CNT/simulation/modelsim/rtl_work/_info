@@ -1,0 +1,313 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Project\VHDL\SequentialLogic\FREQ_CNT\simulation\modelsim
+Ealert
+Z1 w1434112842
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dE:\Project\VHDL\SequentialLogic\FREQ_CNT\simulation\modelsim
+Z7 8E:/Project/VHDL/SequentialLogic/FREQ_CNT/ALERT.vhd
+Z8 FE:/Project/VHDL/SequentialLogic/FREQ_CNT/ALERT.vhd
+l0
+L6
+VYd6aiJa=;eMF0:6TaPbWL1
+Z9 OV;C;10.1e;51
+31
+Z10 !s108 1434156103.513000
+Z11 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/SequentialLogic/FREQ_CNT/ALERT.vhd|
+Z12 !s107 E:/Project/VHDL/SequentialLogic/FREQ_CNT/ALERT.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+!s100 NDzAVe`]J?3H7EaSl_aGC1
+!i10b 1
+Aart1
+R2
+R3
+R4
+R5
+DEx4 work 5 alert 0 22 Yd6aiJa=;eMF0:6TaPbWL1
+l23
+L22
+Vzn<5Bf7a[9O]fJb_XdiNF0
+R9
+31
+R10
+R11
+R12
+R13
+R14
+!s100 ekBaNb;OZ`8Ufd31k:X8Q2
+!i10b 1
+Ecount
+Z15 w1434114189
+R2
+R3
+R4
+R5
+R6
+Z16 8E:/Project/VHDL/SequentialLogic/FREQ_CNT/COUNT.vhd
+Z17 FE:/Project/VHDL/SequentialLogic/FREQ_CNT/COUNT.vhd
+l0
+L7
+VC2F9jYh_Ak3i8LfQY[H4K2
+R9
+31
+Z18 !s108 1434156103.264000
+Z19 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/SequentialLogic/FREQ_CNT/COUNT.vhd|
+Z20 !s107 E:/Project/VHDL/SequentialLogic/FREQ_CNT/COUNT.vhd|
+R13
+R14
+!s100 m26iCS>[iXQDzd?;lMJkB2
+!i10b 1
+Aart1
+R2
+R3
+R4
+R5
+DEx4 work 5 count 0 22 C2F9jYh_Ak3i8LfQY[H4K2
+l23
+L19
+VW<z75OnIXS6`]loG5=BeF3
+R9
+31
+R18
+R19
+R20
+R13
+R14
+!s100 ScI`O0?DLgiz2O`7l[`c<0
+!i10b 1
+Ed_latch
+Z21 w1434098149
+R2
+R3
+R4
+R5
+R6
+Z22 8E:/Project/VHDL/SequentialLogic/FREQ_CNT/D_LATCH.vhd
+Z23 FE:/Project/VHDL/SequentialLogic/FREQ_CNT/D_LATCH.vhd
+l0
+L6
+VXR=NgXWIl]Cm>lNk[XJl52
+R9
+31
+Z24 !s108 1434156102.993000
+Z25 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/SequentialLogic/FREQ_CNT/D_LATCH.vhd|
+Z26 !s107 E:/Project/VHDL/SequentialLogic/FREQ_CNT/D_LATCH.vhd|
+R13
+R14
+!s100 6h`8466=mR9Hk?9O:1`Q30
+!i10b 1
+Aart1
+R2
+R3
+R4
+R5
+DEx4 work 7 d_latch 0 22 XR=NgXWIl]Cm>lNk[XJl52
+l19
+L17
+Vf2_JnzN6gen^3b=5dJ5zE3
+R9
+31
+R24
+R25
+R26
+R13
+R14
+!s100 9:Dhz[ob>i_OAU7n^F5aR3
+!i10b 1
+Ediv_freq
+Z27 w1434078378
+R2
+R3
+R4
+R5
+R6
+Z28 8E:/Project/VHDL/SequentialLogic/FREQ_CNT/DIV_FREQ.vhd
+Z29 FE:/Project/VHDL/SequentialLogic/FREQ_CNT/DIV_FREQ.vhd
+l0
+L6
+VRUX4a^N4`HSWUhOnb5KBd1
+R9
+31
+Z30 !s108 1434156102.713000
+Z31 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/SequentialLogic/FREQ_CNT/DIV_FREQ.vhd|
+Z32 !s107 E:/Project/VHDL/SequentialLogic/FREQ_CNT/DIV_FREQ.vhd|
+R13
+R14
+!s100 dX^KKHDISg3e?Ikmg`@J_2
+!i10b 1
+Aart1
+R2
+R3
+R4
+R5
+DEx4 work 8 div_freq 0 22 RUX4a^N4`HSWUhOnb5KBd1
+l15
+L13
+V5OTHP`1]ISnIXi14Q4OmJ1
+R9
+31
+R30
+R31
+R32
+R13
+R14
+!s100 8P@m5EBEdmJQ@J8KRLajM0
+!i10b 1
+Efreq_cnt
+Z33 w1434097686
+R2
+R3
+R4
+R5
+R6
+Z34 8E:/Project/VHDL/SequentialLogic/FREQ_CNT/FREQ_CNT.vhd
+Z35 FE:/Project/VHDL/SequentialLogic/FREQ_CNT/FREQ_CNT.vhd
+l0
+L6
+V@SPi;C_XboS77=]aFfhcG1
+R9
+31
+Z36 !s108 1434156102.204000
+Z37 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/SequentialLogic/FREQ_CNT/FREQ_CNT.vhd|
+Z38 !s107 E:/Project/VHDL/SequentialLogic/FREQ_CNT/FREQ_CNT.vhd|
+R13
+R14
+!s100 S2[C=kdkAZc;J`mHP2GHA2
+!i10b 1
+Aart
+R2
+R3
+R4
+R5
+DEx4 work 8 freq_cnt 0 22 @SPi;C_XboS77=]aFfhcG1
+l104
+L25
+Vl@n@Ehf>6Di3MR1NYNjE=2
+R9
+31
+R36
+R37
+R38
+R13
+R14
+!s100 mPkQz52];V1kRIm]`8aN`3
+!i10b 1
+Efreq_cnt_vhd_tst
+Z39 w1434156051
+R4
+R5
+R6
+Z40 8E:/Project/VHDL/SequentialLogic/FREQ_CNT/simulation/modelsim/FREQ_CNT.vht
+Z41 FE:/Project/VHDL/SequentialLogic/FREQ_CNT/simulation/modelsim/FREQ_CNT.vht
+l0
+L31
+VjjZk_@5ZB:nHDl?LeWFZS0
+!s100 [^>[A=3PCYP=kKlK[8hLj1
+R9
+31
+!i10b 1
+Z42 !s108 1434156103.996000
+Z43 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/SequentialLogic/FREQ_CNT/simulation/modelsim/FREQ_CNT.vht|
+Z44 !s107 E:/Project/VHDL/SequentialLogic/FREQ_CNT/simulation/modelsim/FREQ_CNT.vht|
+R13
+R14
+Afreq_cnt_arch
+R4
+R5
+DEx4 work 16 freq_cnt_vhd_tst 0 22 jjZk_@5ZB:nHDl?LeWFZS0
+l71
+L33
+V5giL7M^mNI4Mn]a=S<AN_2
+!s100 jM]8adj06LHTl;Vz3GFJO1
+R9
+31
+!i10b 1
+R42
+R43
+R44
+R13
+R14
+Eled_disp
+Z45 w1434116992
+R2
+R3
+R4
+R5
+R6
+Z46 8E:/Project/VHDL/SequentialLogic/FREQ_CNT/LED_DISP.vhd
+Z47 FE:/Project/VHDL/SequentialLogic/FREQ_CNT/LED_DISP.vhd
+l0
+L6
+VC6^EFcoRf4gzKefzL]G]c0
+R9
+31
+Z48 !s108 1434156101.792000
+Z49 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/SequentialLogic/FREQ_CNT/LED_DISP.vhd|
+Z50 !s107 E:/Project/VHDL/SequentialLogic/FREQ_CNT/LED_DISP.vhd|
+R13
+R14
+!s100 i8fE@S;gNeQY_i@T`XGQZ3
+!i10b 1
+Aart1
+R2
+R3
+R4
+R5
+DEx4 work 8 led_disp 0 22 C6^EFcoRf4gzKefzL]G]c0
+l18
+L16
+VlL`U]2KZf80boj>Y<o`U83
+R9
+31
+R48
+R49
+R50
+R13
+R14
+!s100 W6YhmXkV==1Lm_f37Hkm`1
+!i10b 1
+Esel_signal
+Z51 w1434117845
+R2
+R3
+R4
+R5
+R6
+Z52 8E:/Project/VHDL/SequentialLogic/FREQ_CNT/SEL_SIGNAL.vhd
+Z53 FE:/Project/VHDL/SequentialLogic/FREQ_CNT/SEL_SIGNAL.vhd
+l0
+L6
+VKV5a;[dbXFdzo^QRh1nPT1
+R9
+31
+Z54 !s108 1434156101.518000
+Z55 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/SequentialLogic/FREQ_CNT/SEL_SIGNAL.vhd|
+Z56 !s107 E:/Project/VHDL/SequentialLogic/FREQ_CNT/SEL_SIGNAL.vhd|
+R13
+R14
+!s100 ezD;l:Agj3o@<MMmKj;aj2
+!i10b 1
+Aart1
+R2
+R3
+R4
+R5
+DEx4 work 10 sel_signal 0 22 KV5a;[dbXFdzo^QRh1nPT1
+l16
+L15
+VGYZ:@jA[j7dPD6jzWiX[[1
+R9
+31
+R54
+R55
+R56
+R13
+R14
+!s100 X2e6l8CXRMMcGgLK8W]Q83
+!i10b 1

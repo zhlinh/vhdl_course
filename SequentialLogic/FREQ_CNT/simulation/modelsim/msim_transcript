@@ -1,0 +1,110 @@
+# Reading D:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do FREQ_CNT_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {E:/Project/VHDL/SequentialLogic/FREQ_CNT/SEL_SIGNAL.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity SEL_SIGNAL
+# -- Compiling architecture ART1 of SEL_SIGNAL
+# vcom -93 -work work {E:/Project/VHDL/SequentialLogic/FREQ_CNT/LED_DISP.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity LED_DISP
+# -- Compiling architecture ART1 of LED_DISP
+# vcom -93 -work work {E:/Project/VHDL/SequentialLogic/FREQ_CNT/FREQ_CNT.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity FREQ_CNT
+# -- Compiling architecture ART of FREQ_CNT
+# vcom -93 -work work {E:/Project/VHDL/SequentialLogic/FREQ_CNT/DIV_FREQ.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity DIV_FREQ
+# -- Compiling architecture ART1 of DIV_FREQ
+# vcom -93 -work work {E:/Project/VHDL/SequentialLogic/FREQ_CNT/D_LATCH.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity D_LATCH
+# -- Compiling architecture ART1 of D_LATCH
+# vcom -93 -work work {E:/Project/VHDL/SequentialLogic/FREQ_CNT/COUNT.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity COUNT
+# -- Compiling architecture ART1 of COUNT
+# vcom -93 -work work {E:/Project/VHDL/SequentialLogic/FREQ_CNT/ALERT.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity ALERT
+# -- Compiling architecture ART1 of ALERT
+# 
+# vcom -93 -work work {E:/Project/VHDL/SequentialLogic/FREQ_CNT/simulation/modelsim/FREQ_CNT.vht}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FREQ_CNT_vhd_tst
+# -- Compiling architecture FREQ_CNT_arch of FREQ_CNT_vhd_tst
+# ** Warning: [4] E:/Project/VHDL/SequentialLogic/FREQ_CNT/simulation/modelsim/FREQ_CNT.vht(126): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs="+acc"  FREQ_CNT_vhd_tst
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs=\"+acc\" -t 1ps FREQ_CNT_vhd_tst 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.freq_cnt_vhd_tst(freq_cnt_arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.freq_cnt(art)
+# Loading work.div_freq(art1)
+# Loading work.sel_signal(art1)
+# Loading work.count(art1)
+# Loading work.alert(art1)
+# Loading work.d_latch(art1)
+# Loading work.led_disp(art1)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 10 sec
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /freq_cnt_vhd_tst/i1/INST_ALERT
+# Can't move the Now cursor.
