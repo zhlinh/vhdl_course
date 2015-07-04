@@ -1,0 +1,192 @@
+--Top-Level Entity
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+--使用自定义程序包
+USE WORK.MYTYPE.ALL;
+ENTITY IMG_LSB IS
+    PORT(CLK: IN STD_LOGIC;
+         RESET: IN STD_LOGIC;
+         SEL: IN STD_LOGIC;
+         AX_LOCATE: IN INTEGER;
+         AY_LOCATE: IN INTEGER;
+
+         BX_LOCATE: IN INTEGER;
+         BY_LOCATE: IN INTEGER;
+
+         CX_LOCATE: IN INTEGER;
+         CY_LOCATE: IN INTEGER;
+         INSERT_DONE: OUT STD_LOGIC;
+         DETECT_RESULT: OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+         DETECT_DONE: OUT STD_LOGIC);
+END ENTITY IMG_LSB;
+ARCHITECTURE ART OF IMG_LSB IS
+    COMPONENT LOAD_DATA
+        PORT(CLK: IN STD_LOGIC;
+             RESET: IN STD_LOGIC;
+             R_OUT: OUT MATRIX;
+             G_OUT: OUT MATRIX;
+             B_OUT: OUT MATRIX;
+             FINISHED: OUT STD_LOGIC);
+    END COMPONENT;
+
+    COMPONENT RGB2YUV
+        PORT(ENABLE: IN STD_LOGIC;
+             RESET: IN STD_LOGIC;
+             CLK: IN STD_LOGIC;
+             R_IN: IN MATRIX;
+             G_IN: IN MATRIX;
+             B_IN: IN MATRIX;
+             Y_OUT: OUT MATRIX;
+             U_OUT: OUT MATRIX;
+             V_OUT: OUT MATRIX;
+             FINISHED: OUT STD_LOGIC);
+    END COMPONENT;
+
+    COMPONENT CHOOSE
+        PORT(ENABLE: IN STD_LOGIC;
+		  RESET: IN STD_LOGIC;
+        CLK: IN STD_LOGIC;
+        SEL: IN STD_LOGIC;
+        TO_INSERT: OUT STD_LOGIC;
+        TO_DETECT: OUT STD_LOGIC);
+    END COMPONENT;
+
+    COMPONENT LSB_INSERT
+        PORT(ENABLE: IN STD_LOGIC;
+             CLK: IN STD_LOGIC;
+             RESET: IN STD_LOGIC;
+             Y_IN: IN MATRIX;
+
+             AX_LOCATE: IN INTEGER;
+             AY_LOCATE: IN INTEGER;
+
+             BX_LOCATE: IN INTEGER;
+             BY_LOCATE: IN INTEGER;
+
+             CX_LOCATE: IN INTEGER;
+             CY_LOCATE: IN INTEGER;
+
+             FIXED_Y_OUT: OUT MATRIX;
+             FINISHED: OUT STD_LOGIC);
+    END COMPONENT;
+
+    COMPONENT LSB_DETECT
+        PORT(ENABLE: IN STD_LOGIC;
+             CLK: IN STD_LOGIC;
+             RESET: IN STD_LOGIC;
+             Y_IN: IN MATRIX;
+             RESULT: OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
+             ALL_FINISHED: OUT STD_LOGIC);
+    END COMPONENT;
+
+    COMPONENT YUV2RGB
+        PORT(ENABLE: IN STD_LOGIC;
+				 CLK: IN STD_LOGIC;
+				 RESET: IN STD_LOGIC;
+				 FIXED_Y_IN: IN MATRIX;
+				 U_IN: IN MATRIX;
+				 V_IN: IN MATRIX;
+				 R_OUT: OUT MATRIX;
+				 G_OUT: OUT MATRIX;
+				 B_OUT: OUT MATRIX;
+				 FINISHED: OUT STD_LOGIC);
+    END COMPONENT;
+
+    COMPONENT SAVE_DATA
+        PORT(CLK: IN STD_LOGIC;
+             RESET: IN STD_LOGIC;
+             ENABLE: IN STD_LOGIC;
+             R_IN: IN MATRIX;
+             G_IN: IN MATRIX;
+             B_IN: IN MATRIX;
+             ALL_FINISHED: OUT STD_LOGIC);
+    END COMPONENT;
+
+    SIGNAL R_MID1: MATRIX;
+    SIGNAL G_MID1: MATRIX;
+    SIGNAL B_MID1: MATRIX;
+    SIGNAL FIN_MID1: STD_LOGIC;
+
+    SIGNAL Y_MID2: MATRIX;
+    SIGNAL U_MID2: MATRIX;
+    SIGNAL V_MID2: MATRIX;
+    SIGNAL FIN_MID2: STD_LOGIC;
+
+    SIGNAL TOIN_MID3: STD_LOGIC;
+    SIGNAL TODE_MID3: STD_LOGIC;
+
+    SIGNAL FIX_Y_MID4: MATRIX;
+    SIGNAL FIN_MID4: STD_LOGIC;
+
+    SIGNAL R_MID6: MATRIX;
+    SIGNAL G_MID6: MATRIX;
+    SIGNAL B_MID6: MATRIX;
+    SIGNAL FIN_MID6: STD_LOGIC;
+
+BEGIN
+    INST_LOAD_DATA: LOAD_DATA PORT MAP(
+            CLK => CLK,
+            RESET=>RESET,
+            R_OUT=>R_MID1,
+            G_OUT=>G_MID1,
+            B_OUT=>B_MID1,
+            FINISHED=>FIN_MID1);
+    INST_RGB2YUV: RGB2YUV PORT MAP(
+            CLK=>CLK,
+            RESET=>RESET,
+            ENABLE=>FIN_MID1,
+            R_IN=>R_MID1,
+            B_IN=>B_MID1,
+            G_IN=>G_MID1,
+            Y_OUT=>Y_MID2,
+            U_OUT=>U_MID2,
+            V_OUT=>V_MID2,
+            FINISHED=>FIN_MID2);
+    INST_CHOOSE: CHOOSE PORT MAP(
+            CLK=>CLK,
+            RESET=>RESET,
+            ENABLE=>FIN_MID2,
+				SEL=>SEL,
+            TO_INSERT=>TOIN_MID3,
+            TO_DETECT=>TODE_MID3);
+    INST_LSB_INSERT: LSB_INSERT PORT MAP(
+            CLK=>CLK,
+            RESET=>RESET,
+            ENABLE=>TOIN_MID3,
+            Y_IN=>Y_MID2,
+            AX_LOCATE=>AX_LOCATE,
+            AY_LOCATE=>AY_LOCATE,
+            BX_LOCATE=>BX_LOCATE,
+            BY_LOCATE=>BY_LOCATE,
+            CX_LOCATE=>CX_LOCATE,
+            CY_LOCATE=>CY_LOCATE,
+            FIXED_Y_OUT=>FIX_Y_MID4,
+            FINISHED=>FIN_MID4);
+    INST_LSB_DETECT: LSB_DETECT PORT MAP(
+            CLK=>CLK,
+            RESET=>RESET,
+            ENABLE=>TODE_MID3,
+            Y_IN=>Y_MID2,
+            RESULT=>DETECT_RESULT,
+            ALL_FINISHED=>DETECT_DONE);
+    INST_YUV2RGB: YUV2RGB PORT MAP(
+            CLK=>CLK,
+            RESET=>RESET,
+            ENABLE=>FIN_MID4,
+            FIXED_Y_IN=>FIX_Y_MID4,
+            U_IN=>U_MID2,
+            V_IN=>V_MID2,
+            R_OUT=>R_MID6,
+            G_OUT=>G_MID6,
+            B_OUT=>B_MID6,
+            FINISHED=>FIN_MID6);
+    INST_SAVE_DATA: SAVE_DATA PORT MAP(
+            CLK=>CLK,
+            RESET=>RESET,
+            ENABLE=>FIN_MID6,
+            R_IN=>R_MID6,
+            G_IN=>G_MID6,
+            B_IN=>B_MID6,
+            ALL_FINISHED=>INSERT_DONE);
+END ARCHITECTURE ART;
