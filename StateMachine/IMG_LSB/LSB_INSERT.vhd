@@ -7,86 +7,94 @@ ENTITY LSB_INSERT IS
     PORT(ENABLE: IN STD_LOGIC;
          CLK: IN STD_LOGIC;
          RESET: IN STD_LOGIC;
-         Y_IN: IN MATRIX;
+         Y_IN: IN COLOR;
+         U_IN: IN COLOR;
+         V_IN: IN COLOR;
 
-         AX_LOCATE: IN INTEGER;
-         AY_LOCATE: IN INTEGER;
+         A_COL: IN COLOR;
+         A_ROW: IN COLOR;
 
-         BX_LOCATE: IN INTEGER;
-         BY_LOCATE: IN INTEGER;
+         B_COL: IN COLOR;
+         B_ROW: IN COLOR;
 
-         CX_LOCATE: IN INTEGER;
-         CY_LOCATE: IN INTEGER;
+         C_COL: IN COLOR;
+         C_ROW: IN COLOR;
 
-         FIXED_Y_OUT: OUT MATRIX;
-         FINISHED: OUT STD_LOGIC);
+         FIXED_Y_OUT: OUT COLOR;
+         U_OUT: OUT COLOR;
+         V_OUT: OUT COLOR);
 END ENTITY LSB_INSERT;
-ARCHITECTURE ART1 OF LSB_INSERT IS
-    VARIABLE FIXED_Y_REM: MATRIX;
-    VARIABLE GREY_REM: STD_LOGIC_VECTOR(7 DOWNTO 0);
-    CONSTANT A_SEQ: STD_LOGIC_VECTOR(0 TO 4):="01101";
-    CONSTANT B_SEQ: STD_LOGIC_VECTOR(0 TO 4):="10101";
-    CONSTANT C_SEQ: STD_LOGIC_VECTOR(0 TO 4):="11001";
+ARCHITECTURE ART1 OF LSB_INSERT IS   
+    CONSTANT SEQ1: STD_LOGIC_VECTOR(0 TO 4):="01101";
+    CONSTANT SEQ2: STD_LOGIC_VECTOR(0 TO 4):="10101";
+    CONSTANT SEQ3: STD_LOGIC_VECTOR(0 TO 4):="11001";
+      
+    SIGNAL AA: INTEGER RANGE 0 TO 65535;
+    SIGNAL BB: INTEGER RANGE 0 TO 65535;
+    SIGNAL CC: INTEGER RANGE 0 TO 65535;
 BEGIN
-    INSERT: PROCESS(ENABLE)
+    COMPUTE: PROCESS(A_ROW,A_COL,B_ROW,B_COL,C_ROW,C_COL)
     BEGIN
-        FIXED_Y_REM:= Y_IN;
-        IF(ENABLE = '1') THEN
-            --LSB插入第一个序列
-            FOR I IN 0 TO 4 LOOP
-                IF(AY_LOCATE + I <= 255) THEN
-                    -- 取出灰度的8 bit 数据
-                    GREY_REM:= CONV_STD_LOGIC_VECTOR(Y_IN(AX_LOCATE,AY_LOCATE + I), 8);
-                    -- 更改 LSB位
-                    GREY_REM(0):= A_SEQ(I);
-                    -- 将更改 赋值到 Y 像素矩阵中
-                    FIXED_Y_REM(AX_LOCATE,AY_LOCATE + I):= CONV_INTEGER(UNSIGNED(GREY_REM));
-                ELSE
-                    GREY_REM:= CONV_STD_LOGIC_VECTOR(Y_IN(AX_LOCATE + 1,AY_LOCATE + I - 256), 8);
-                    GREY_REM(0):= A_SEQ(I);
-                    FIXED_Y_REM(AX_LOCATE + 1,AY_LOCATE + I - 256):= CONV_INTEGER(UNSIGNED(GREY_REM));
-                END IF;
-            END LOOP;
-            --LSB插入第二个序列
-            FOR I IN 0 TO 4 LOOP
-                IF(BY_LOCATE + I <= 255) THEN
-                    -- 取出灰度的8 bit 数据
-                    GREY_REM:= CONV_STD_LOGIC_VECTOR(Y_IN(BX_LOCATE,BY_LOCATE + I), 8);
-                    -- 更改 LSB位
-                    GREY_REM(0):= B_SEQ(I);
-                    -- 将更改 赋值到 Y 像素矩阵中
-                    FIXED_Y_REM(BX_LOCATE,BY_LOCATE + I):= CONV_INTEGER(UNSIGNED(GREY_REM));
-                ELSE
-                    GREY_REM:= CONV_STD_LOGIC_VECTOR(Y_IN(BX_LOCATE + 1,BY_LOCATE + I - 256), 8);
-                    GREY_REM(0):= B_SEQ(I);
-                    FIXED_Y_REM(BX_LOCATE + 1,BY_LOCATE + I - 256):= CONV_INTEGER(UNSIGNED(GREY_REM));
-                END IF;
-            END LOOP;
-            --LSB插入第三个序列
-            FOR I IN 0 TO 4 LOOP
-                IF(CY_LOCATE + I <= 255) THEN
-                    -- 取出灰度的8 bit 数据
-                    GREY_REM:= CONV_STD_LOGIC_VECTOR(Y_IN(CX_LOCATE,CY_LOCATE + I), 8);
-                    -- 更改 LSB位
-                    GREY_REM(0):= C_SEQ(I);
-                    -- 将更改 赋值到 Y 像素矩阵中
-                    FIXED_Y_REM(CX_LOCATE,CY_LOCATE + I):= CONV_INTEGER(UNSIGNED(GREY_REM));
-                ELSE
-                    GREY_REM:= CONV_STD_LOGIC_VECTOR(Y_IN(CX_LOCATE + 1,CY_LOCATE + I - 256), 8);
-                    GREY_REM(0):= B_SEQ(I);
-                    FIXED_Y_REM(CX_LOCATE + 1,CY_LOCATE + I - 256):= CONV_INTEGER(UNSIGNED(GREY_REM));
-                END IF;
-            END LOOP;
-        END IF;
+        AA<=256*A_ROW+A_COL;
+        BB<=256*B_ROW+B_COL;
+        CC<=256*C_ROW+C_COL;
     END PROCESS;
 
-    CLOCK: PROCESS(CLK,RESET)
+    CLOCK: PROCESS(CLK,RESET,ENABLE)
+	 VARIABLE FIXED_Y_REM: COLOR;
+    VARIABLE GREY_REM: STD_LOGIC_VECTOR(7 DOWNTO 0);
+	 VARIABLE SEQ1_I: INTEGER RANGE 0 TO 9;
+    VARIABLE SEQ2_I: INTEGER RANGE 0 TO 9;
+    VARIABLE SEQ3_I: INTEGER RANGE 0 TO 9;
+	 --COUNT的范围是256*256
+    VARIABLE COUNT: INTEGER RANGE 0 TO 65536;
     BEGIN
-        IF(RESET='1') THEN
-            FINISHED<='0';
+        IF(RESET='1' OR ENABLE='0') THEN
+            COUNT:=0;
+            SEQ1_I:=0;
+            SEQ2_I:=0;
+            SEQ3_I:=0;
+            FIXED_Y_OUT<=0;
+            U_OUT<=0;
+            V_OUT<=0;
+		  ELSIF(COUNT=65536) THEN
+				FIXED_Y_OUT<=0;
+            U_OUT<=0;
+            V_OUT<=0;
         ELSIF(CLK'EVENT AND CLK='1') THEN
-            FIXED_Y_OUT<= FIXED_Y_REM;
-            FINISHED<='1';
+            COUNT:=COUNT+1;
+            IF( (COUNT>=AA) AND (COUNT<=AA+4)) THEN
+                -- 取出灰度的8 bit 数据
+                GREY_REM:= CONV_STD_LOGIC_VECTOR(Y_IN, 8);
+                -- 更改 LSB位
+                GREY_REM(0):= SEQ1(SEQ1_I);
+                SEQ1_I:=SEQ1_I+1;
+                -- 将更改输出
+                FIXED_Y_REM:= CONV_INTEGER(UNSIGNED(GREY_REM));
+                FIXED_Y_OUT<= FIXED_Y_REM;
+            ELSIF( (COUNT>=BB) AND (COUNT<=BB+4)) THEN
+                -- 取出灰度的8 bit 数据
+                GREY_REM:= CONV_STD_LOGIC_VECTOR(Y_IN, 8);
+                -- 更改 LSB位
+                GREY_REM(0):= SEQ2(SEQ2_I);
+                SEQ2_I:=SEQ2_I+1;
+                -- 将更改输出
+                FIXED_Y_REM:= CONV_INTEGER(UNSIGNED(GREY_REM));
+                FIXED_Y_OUT<= FIXED_Y_REM;
+            ELSIF( (COUNT>=CC) AND (COUNT<=CC+4)) THEN
+                -- 取出灰度的8 bit 数据
+                GREY_REM:= CONV_STD_LOGIC_VECTOR(Y_IN, 8);
+                -- 更改 LSB位
+                GREY_REM(0):= SEQ3(SEQ3_I);
+                SEQ3_I:=SEQ3_I+1;
+                -- 将更改输出
+                FIXED_Y_REM:= CONV_INTEGER(UNSIGNED(GREY_REM));
+                FIXED_Y_OUT<= FIXED_Y_REM;
+            ELSE
+                FIXED_Y_OUT<=Y_IN;
+            END IF;
+            U_OUT<=U_IN;
+            V_OUT<=V_IN;
         END IF;
     END PROCESS;
 END ARCHITECTURE ART1;

@@ -7,17 +7,13 @@ ENTITY LSB_DETECT IS
     PORT(ENABLE: IN STD_LOGIC;
          CLK: IN STD_LOGIC;
          RESET: IN STD_LOGIC;
-         Y_IN: IN MATRIX;
-         RESULT: OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
-         ALL_FINISHED: BUFFER STD_LOGIC);
+         Y_IN: IN COLOR;
+         RESULT: OUT STD_LOGIC_VECTOR(1 DOWNTO 0));
 END ENTITY LSB_DETECT;
 ARCHITECTURE ART1 OF LSB_DETECT IS
     TYPE STATETYPE IS (S1,S2,S3,S4,S5,S6,S7,S8,S9,S10,S11,S12,S13,S14,S15);
     SIGNAL PRESENT_STATE,NEXT_STATE: STATETYPE;
-    VARIABLE GREY_REM: STD_LOGIC_VECTOR(7 DOWNTO 0);
-    VARIABLE DIN: STD_LOGIC;
-    VARIABLE I: INTEGER;
-    VARIABLE J: INTEGER;
+    SIGNAL DIN: STD_LOGIC;
 BEGIN
     COMB_PROCESS_1: PROCESS(DIN,PRESENT_STATE)
     BEGIN
@@ -110,31 +106,17 @@ BEGIN
         END CASE;
     END PROCESS;
 
-    CLK_PROCESS: PROCESS(CLK,RESET)
+    CLK_PROCESS: PROCESS(CLK,RESET,ENABLE)
+	 VARIABLE GREY_REM: STD_LOGIC_VECTOR(7 DOWNTO 0);
     BEGIN
-        IF(RESET='1') THEN
+        IF(RESET='1'OR ENABLE='0') THEN
             PRESENT_STATE<=S1;
-            NEXT_STATE<=S1;
-            I:=0;
-            J:=0;
         ELSIF(CLK'EVENT AND CLK='1') THEN
-            IF(ENABLE='1') THEN
-                IF(J<=255) THEN
-                    J:=J+1;
-                ELSIF(I<=255) THEN
-                    J:=0;
-                    I:=I+1;
-                ELSE
-                    ALL_FINISHED<='1';
-                END IF;
-                IF(ALL_FINISHED/='1') THEN
-                    -- 取出灰度的8 bit 数据
-                    GREY_REM:= CONV_STD_LOGIC_VECTOR(Y_IN(I, J), 8);
-                    -- 取出LSB 位
-                    DIN:=GREY_REM(0);
-                    PRESENT_STATE<=NEXT_STATE;
-                END IF;
-            END IF;
+            -- 取出灰度的8 bit 数据
+            GREY_REM:= CONV_STD_LOGIC_VECTOR(Y_IN, 8);
+            -- 取出LSB 位
+            DIN<=GREY_REM(0);
+            PRESENT_STATE<=NEXT_STATE;
         END IF;
     END PROCESS;
 END ARCHITECTURE;

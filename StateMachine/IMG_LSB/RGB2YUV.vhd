@@ -3,50 +3,62 @@ USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 USE WORK.MYTYPE.ALL;
 ENTITY RGB2YUV IS
-    PORT(ENABLE: IN STD_LOGIC;
-         RESET: IN STD_LOGIC;
+    PORT(RESET: IN STD_LOGIC;
          CLK: IN STD_LOGIC;
-         R_IN: IN MATRIX;
-         G_IN: IN MATRIX;
-         B_IN: IN MATRIX;
-         Y_OUT: OUT MATRIX;
-         U_OUT: OUT MATRIX;
-         V_OUT: OUT MATRIX;
-         FINISHED: OUT STD_LOGIC);
+         R_IN: IN COLOR;
+         G_IN: IN COLOR;
+         B_IN: IN COLOR;
+         Y_OUT: OUT COLOR;
+         U_OUT: OUT COLOR;
+         V_OUT: OUT COLOR);
 END ENTITY RGB2YUV;
 ARCHITECTURE ART1 OF RGB2YUV IS
-    VARIABLE R:INTEGER;
-    VARIABLE G:INTEGER;
-    VARIABLE B:INTEGER;
-    VARIABLE Y_REG: MATRIX;
-    VARIABLE U_REG: MATRIX;
-    VARIABLE V_REG: MATRIX;
+    SIGNAL Y_REG: COLOR;
+    SIGNAL U_REG: COLOR;
+    SIGNAL V_REG: COLOR;
 BEGIN
-    TRANSFORM: PROCESS(ENABLE)
+    TRANSFORM: PROCESS(R_IN,G_IN,B_IN)
+    VARIABLE TEMP: INTEGER RANGE -512 TO 512;
     BEGIN
-        IF(ENABLE'EVENT AND ENABLE='1') THEN
-            FOR i IN 0 TO 255 LOOP
-                FOR j IN 0 TO 255 LOOP
-                    R:=R_IN(i,j);
-                    G:=G_IN(i,j);
-                    B:=B_IN(i,j);
-                    Y_REG(i,j):=(299*R + 587*G + 114*B)/1000;
-                    U_REG(i,j):=(-147*R - 289*G + 436*B)/1000;
-                    V_REG(i,j):=(615*R - 515*G - 100*B)/1000;
-                END LOOP;
-            END LOOP;
+        TEMP:=(299*R_IN + 587*G_IN + 114*B_IN)/1000;
+        --调整
+        IF(TEMP<16) THEN
+            Y_REG<=16;
+        ELSIF(TEMP>255) THEN
+            Y_REG<=255;
+        ELSE
+            Y_REG<=TEMP;
+        END IF;
+        TEMP:=(-147*R_IN - 289*G_IN + 436*B_IN)/1000;
+        --调整
+        IF(TEMP<0) THEN
+            U_REG<=0;
+        ELSIF(TEMP>255) THEN
+            U_REG<=255;
+        ELSE
+            U_REG<=TEMP;
+        END IF;
+        TEMP:=(615*R_IN - 515*G_IN - 100*B_IN)/1000;
+        --调整
+        IF(TEMP<0) THEN
+            V_REG<=0;
+        ELSIF(TEMP>255) THEN
+            V_REG<=255;
+        ELSE
+            V_REG<=TEMP;
         END IF;
     END PROCESS;
 
     CLOCK: PROCESS(CLK,RESET)
     BEGIN
         IF(RESET='1') THEN
-            FINISHED<='0';
+            Y_OUT<=0;
+            U_OUT<=0;
+            V_OUT<=0;
         ELSIF(CLK'EVENT AND CLK='1') THEN
             Y_OUT<=Y_REG;
             U_OUT<=U_REG;
             V_OUT<=V_REG;
-            FINISHED<='1';
         END IF;
     END PROCESS;
 END ARCHITECTURE ART1;

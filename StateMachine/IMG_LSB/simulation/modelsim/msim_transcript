@@ -1,0 +1,127 @@
+# Reading D:/altera/14.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do IMG_LSB_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\14.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {E:/Project/VHDL/StateMachine/IMG_LSB/CHOOSE.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity CHOOSE
+# -- Compiling architecture ART1 of CHOOSE
+# vcom -93 -work work {E:/Project/VHDL/StateMachine/IMG_LSB/MYTYPE.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling package MYTYPE
+# vcom -93 -work work {E:/Project/VHDL/StateMachine/IMG_LSB/YUV2RGB.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MYTYPE
+# -- Compiling entity YUV2RGB
+# -- Compiling architecture ART1 of YUV2RGB
+# vcom -93 -work work {E:/Project/VHDL/StateMachine/IMG_LSB/RGB2YUV.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MYTYPE
+# -- Compiling entity RGB2YUV
+# -- Compiling architecture ART1 of RGB2YUV
+# vcom -93 -work work {E:/Project/VHDL/StateMachine/IMG_LSB/LSB_INSERT.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MYTYPE
+# -- Compiling entity LSB_INSERT
+# -- Compiling architecture ART1 of LSB_INSERT
+# vcom -93 -work work {E:/Project/VHDL/StateMachine/IMG_LSB/LSB_DETECT.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MYTYPE
+# -- Compiling entity LSB_DETECT
+# -- Compiling architecture ART1 of LSB_DETECT
+# vcom -93 -work work {E:/Project/VHDL/StateMachine/IMG_LSB/IMG_LSB.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MYTYPE
+# -- Compiling entity IMG_LSB
+# -- Compiling architecture ART of IMG_LSB
+# 
+# vcom -93 -work work {E:/Project/VHDL/StateMachine/IMG_LSB/simulation/modelsim/TB_IMG_LSB.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1e Compiler 2013.06 Jun 12 2013
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package MYTYPE
+# -- Loading package std_logic_textio
+# -- Compiling entity IMG_LSB_vhd_tst
+# -- Compiling architecture IMG_LSB_arch of IMG_LSB_vhd_tst
+# ** Warning: E:/Project/VHDL/StateMachine/IMG_LSB/simulation/modelsim/TB_IMG_LSB.vhd(40): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# ** Warning: E:/Project/VHDL/StateMachine/IMG_LSB/simulation/modelsim/TB_IMG_LSB.vhd(41): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# ** Warning: E:/Project/VHDL/StateMachine/IMG_LSB/simulation/modelsim/TB_IMG_LSB.vhd(42): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# ** Warning: E:/Project/VHDL/StateMachine/IMG_LSB/simulation/modelsim/TB_IMG_LSB.vhd(44): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# ** Warning: E:/Project/VHDL/StateMachine/IMG_LSB/simulation/modelsim/TB_IMG_LSB.vhd(45): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# ** Warning: E:/Project/VHDL/StateMachine/IMG_LSB/simulation/modelsim/TB_IMG_LSB.vhd(46): (vcom-1194) FILE declaration was written using VHDL 1987 syntax.
+# 
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs="+acc"  IMG_LSB_vhd_tst
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneiv_hssi -L cycloneiv_pcie_hip -L cycloneiv -L rtl_work -L work -voptargs=\"+acc\" -t 1ps IMG_LSB_vhd_tst 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.mytype
+# Loading ieee.std_logic_textio(body)
+# Loading work.img_lsb_vhd_tst(img_lsb_arch)
+# Loading work.img_lsb(art)
+# Loading work.rgb2yuv(art1)
+# Loading work.choose(art1)
+# Loading work.lsb_insert(art1)
+# Loading work.yuv2rgb(art1)
+# Loading work.lsb_detect(art1)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
