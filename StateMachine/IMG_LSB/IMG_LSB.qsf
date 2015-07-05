@@ -62,5 +62,6 @@ set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH IMG_LSB_vhd_tst
 set_global_assignment -name EDA_TEST_BENCH_NAME IMG_LSB_vhd_tst -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id IMG_LSB_vhd_tst
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME IMG_LSB_vhd_tst -section_id IMG_LSB_vhd_tst
-set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/TB_IMG_LSB.vhd -section_id IMG_LSB_vhd_tst
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 ms" -section_id IMG_LSB_vhd_tst
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/TB_IMG_LSB.vhd -section_id IMG_LSB_vhd_tst
