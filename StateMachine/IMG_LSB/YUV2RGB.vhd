@@ -1,3 +1,4 @@
+--YUV2RGB entity
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.STD_LOGIC_UNSIGNED.ALL;
@@ -26,7 +27,7 @@ BEGIN
             G_OUT<=0;
             B_OUT<=0;
         ELSIF(CLK'EVENT AND CLK='1') THEN
-            TEMP:= (1000*FIXED_Y_IN + 1140*V_IN)/1000;
+            TEMP:= FIXED_Y_IN + 113983*(V_IN-128)/100000;
             --调整
             IF(TEMP<0) THEN
                 R_REG:=0;
@@ -35,7 +36,7 @@ BEGIN
             ELSE
                 R_REG:=TEMP;
             END IF;
-            TEMP:=(1000*FIXED_Y_IN - 394*U_IN - 581*V_IN)/1000;
+            TEMP:=FIXED_Y_IN - 39465*(U_IN-128)/100000 - 58060*(V_IN-128)/100000;
             --调整
             IF(TEMP<0) THEN
                 G_REG:=0;
@@ -44,7 +45,7 @@ BEGIN
             ELSE
                 G_REG:=TEMP;
             END IF;
-            TEMP:=(1000*FIXED_Y_IN + 2032*U_IN)/1000;
+            TEMP:=FIXED_Y_IN + 203211*(U_IN-128)/100000;
             --调整
             IF(TEMP<0) THEN
                 B_REG:=0;

@@ -3,6 +3,8 @@
 .swp
 dist
 # ignore Quartus II generated files
+*.doc
+*.docx
 *sopc_*
 *.jdi
 *.ptf.*

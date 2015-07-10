@@ -49,6 +49,15 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulati
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH IMG_LSB_vhd_tst -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME IMG_LSB_vhd_tst -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id IMG_LSB_vhd_tst
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME IMG_LSB_vhd_tst -section_id IMG_LSB_vhd_tst
+set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 ms" -section_id IMG_LSB_vhd_tst
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/TB_IMG_LSB.vhd -section_id IMG_LSB_vhd_tst
+set_global_assignment -name VHDL_FILE UNHIDE_STR.vhd
+set_global_assignment -name VHDL_FILE HIDE_STR.vhd
 set_global_assignment -name VHDL_FILE simulation/modelsim/TB_IMG_LSB.vhd
 set_global_assignment -name VHDL_FILE YUV2RGB.vhd
 set_global_assignment -name VHDL_FILE RGB2YUV.vhd
@@ -57,11 +66,4 @@ set_global_assignment -name VHDL_FILE LSB_DETECT.vhd
 set_global_assignment -name VHDL_FILE IMG_LSB.vhd
 set_global_assignment -name VHDL_FILE CHOOSE.vhd
 set_global_assignment -name VHDL_FILE MYTYPE.vhd
-set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH IMG_LSB_vhd_tst -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_NAME IMG_LSB_vhd_tst -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id IMG_LSB_vhd_tst
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME IMG_LSB_vhd_tst -section_id IMG_LSB_vhd_tst
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 ms" -section_id IMG_LSB_vhd_tst
-set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/TB_IMG_LSB.vhd -section_id IMG_LSB_vhd_tst

@@ -4,7 +4,7 @@ K3
 cModel Technology
 Z0 dE:\Project\VHDL\StateMachine\IMG_LSB\simulation\modelsim
 Echoose
-Z1 w1436063151
+Z1 w1436195298
 Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
 Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
 Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
@@ -14,25 +14,25 @@ Z7 8E:/Project/VHDL/StateMachine/IMG_LSB/CHOOSE.vhd
 Z8 FE:/Project/VHDL/StateMachine/IMG_LSB/CHOOSE.vhd
 l0
 L4
-V0F:fL3;UXN_@4Ef:>z[Z>2
+VoOQ_[KfePHIKlKzWZ3UD^2
 Z9 OV;C;10.1e;51
 31
-Z10 !s108 1436106762.749000
+Z10 !s108 1436254367.066000
 Z11 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/IMG_LSB/CHOOSE.vhd|
 Z12 !s107 E:/Project/VHDL/StateMachine/IMG_LSB/CHOOSE.vhd|
 Z13 o-93 -work work -O0
 Z14 tExplicit 1
-!s100 6hFe7JBI_lkg708O8mG[f1
+!s100 VLlIgUU2YYk[o=ToH<13>1
 !i10b 1
 Aart1
 R2
 R3
 R4
 R5
-DEx4 work 6 choose 0 22 0F:fL3;UXN_@4Ef:>z[Z>2
-l12
-L11
-V@>Rin]nKWkGnUoR19hZVU1
+DEx4 work 6 choose 0 22 oOQ_[KfePHIKlKzWZ3UD^2
+l15
+L14
+Vf=3WIm0Je<Bb3?z?>BS?L0
 R9
 31
 R10
@@ -40,113 +40,29 @@ R11
 R12
 R13
 R14
-!s100 OLEmAzX_3DF]ccCJ^2N?Q1
+!s100 DMaQ8oiOc1CS9]7@Kh7Y^3
 !i10b 1
-Eimg_lsb
-Z15 w1436063320
-Z16 DPx4 work 6 mytype 0 22 _O5IRBhP;2I7=ieC?UE5V2
+Ehide_str
+Z15 w1436230855
+Z16 DPx4 work 6 mytype 0 22 B8:XWP6:hAT7<2g^Di6b40
 R2
 R3
 R4
 R5
 R6
-Z17 8E:/Project/VHDL/StateMachine/IMG_LSB/IMG_LSB.vhd
-Z18 FE:/Project/VHDL/StateMachine/IMG_LSB/IMG_LSB.vhd
-l0
-L7
-VQl5aL`Yj0=Z<Dic[hIaZS1
-R9
-31
-Z19 !s108 1436106764.388000
-Z20 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/IMG_LSB/IMG_LSB.vhd|
-Z21 !s107 E:/Project/VHDL/StateMachine/IMG_LSB/IMG_LSB.vhd|
-R13
-R14
-!s100 nAOMGc?XWTkC`iT<IUXG80
-!i10b 1
-Aart
-R16
-R2
-R3
-R4
-R5
-DEx4 work 7 img_lsb 0 22 Ql5aL`Yj0=Z<Dic[hIaZS1
-l99
-L29
-VC9ccSLN@T]@WkK_TBD65h2
-R9
-31
-R19
-R20
-R21
-R13
-R14
-!s100 MNgHilP^Ho[GmPmz7>T9<2
-!i10b 1
-Eimg_lsb_vhd_tst
-Z22 w1436106757
-Z23 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
-R16
-R2
-R3
-R4
-R5
-R6
-Z24 8E:/Project/VHDL/StateMachine/IMG_LSB/simulation/modelsim/TB_IMG_LSB.vhd
-Z25 FE:/Project/VHDL/StateMachine/IMG_LSB/simulation/modelsim/TB_IMG_LSB.vhd
-l0
-L35
-VZCLCTLoJUg8WzO8RK6:Wb1
-!s100 KefH:_:GSBC_Q`1cG0zAd3
-R9
-31
-!i10b 1
-Z26 !s108 1436106764.666000
-Z27 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/IMG_LSB/simulation/modelsim/TB_IMG_LSB.vhd|
-Z28 !s107 E:/Project/VHDL/StateMachine/IMG_LSB/simulation/modelsim/TB_IMG_LSB.vhd|
-R13
-R14
-Aimg_lsb_arch
-R23
-R16
-R2
-R3
-R4
-R5
-DEx4 work 15 img_lsb_vhd_tst 0 22 ZCLCTLoJUg8WzO8RK6:Wb1
-l88
-L37
-V@J3]<IOnz0>WNG:c4[nF]3
-!s100 bzoYHa=iPVT]B2@7DYD:G2
-R9
-31
-!i10b 1
-R26
-R27
-R28
-R13
-R14
-Elsb_detect
-Z29 w1436064207
-R16
-R2
-R3
-R4
-R5
-R6
-Z30 8E:/Project/VHDL/StateMachine/IMG_LSB/LSB_DETECT.vhd
-Z31 FE:/Project/VHDL/StateMachine/IMG_LSB/LSB_DETECT.vhd
+Z17 8E:/Project/VHDL/StateMachine/IMG_LSB/HIDE_STR.vhd
+Z18 FE:/Project/VHDL/StateMachine/IMG_LSB/HIDE_STR.vhd
 l0
 L6
-VHhfOoi7jnk9bG`na3@YY91
+V`Nce]MB1^FZaM8YW4=?Ce2
 R9
 31
-Z32 !s108 1436106764.042000
-Z33 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/IMG_LSB/LSB_DETECT.vhd|
-Z34 !s107 E:/Project/VHDL/StateMachine/IMG_LSB/LSB_DETECT.vhd|
+Z19 !s108 1436254367.847000
+Z20 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/IMG_LSB/HIDE_STR.vhd|
+Z21 !s107 E:/Project/VHDL/StateMachine/IMG_LSB/HIDE_STR.vhd|
 R13
 R14
-!s100 1KmWZ^oe`TcijHhb?Kgm]2
+!s100 :6BY:0_ie1KS03S]CfjS?0
 !i10b 1
 Aart1
 R16
@@ -154,37 +70,162 @@ R2
 R3
 R4
 R5
-DEx4 work 10 lsb_detect 0 22 HhfOoi7jnk9bG`na3@YY91
-l17
-L13
-Vd]5Z0dZzN97R^1`[Dbh5`2
+DEx4 work 8 hide_str 0 22 `Nce]MB1^FZaM8YW4=?Ce2
+l25
+L22
+V_7Y2_n49l29n;W]2cBOha3
 R9
 31
-R32
-R33
-R34
+R19
+R20
+R21
 R13
 R14
-!s100 I819L[JhXQP2HRzaZ36e_1
+!s100 Rbna7VHaG5EE]EBTeP>hn2
 !i10b 1
-Elsb_insert
-Z35 w1436081342
+Eimg_lsb
+Z22 w1436184335
 R16
 R2
 R3
 R4
 R5
 R6
-Z36 8E:/Project/VHDL/StateMachine/IMG_LSB/LSB_INSERT.vhd
-Z37 FE:/Project/VHDL/StateMachine/IMG_LSB/LSB_INSERT.vhd
+Z23 8E:/Project/VHDL/StateMachine/IMG_LSB/IMG_LSB.vhd
+Z24 FE:/Project/VHDL/StateMachine/IMG_LSB/IMG_LSB.vhd
+l0
+L7
+Vg;j47Aa]5TogB[aZ=fX<`1
+R9
+31
+Z25 !s108 1436254369.211000
+Z26 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/IMG_LSB/IMG_LSB.vhd|
+Z27 !s107 E:/Project/VHDL/StateMachine/IMG_LSB/IMG_LSB.vhd|
+R13
+R14
+!s100 <K[lVIzF[V?l?0[Gje=;00
+!i10b 1
+Aart
+R16
+R2
+R3
+R4
+R5
+DEx4 work 7 img_lsb 0 22 g;j47Aa]5TogB[aZ=fX<`1
+l149
+L40
+V<Z=[lgX=j9;OagB6>keLS2
+R9
+31
+R25
+R26
+R27
+R13
+R14
+!s100 nD[kgL[4R4@zXh`P3_L:20
+!i10b 1
+Eimg_lsb_vhd_tst
+Z28 w1436254365
+R16
+Z29 DPx4 ieee 16 std_logic_textio 0 22 ?Il0a149GV276[?[UMDWh2
+R2
+R3
+R4
+R5
+R6
+Z30 8E:/Project/VHDL/StateMachine/IMG_LSB/simulation/modelsim/TB_IMG_LSB.vhd
+Z31 FE:/Project/VHDL/StateMachine/IMG_LSB/simulation/modelsim/TB_IMG_LSB.vhd
+l0
+L39
+V57BGVF;a=l]<G=]V6L`7g3
+!s100 E7Z<3k29gSCW?7446QHUh2
+R9
+31
+!i10b 1
+Z32 !s108 1436254369.508000
+Z33 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/IMG_LSB/simulation/modelsim/TB_IMG_LSB.vhd|
+Z34 !s107 E:/Project/VHDL/StateMachine/IMG_LSB/simulation/modelsim/TB_IMG_LSB.vhd|
+R13
+R14
+Aimg_lsb_arch
+R16
+R29
+R2
+R3
+R4
+R5
+DEx4 work 15 img_lsb_vhd_tst 0 22 57BGVF;a=l]<G=]V6L`7g3
+l108
+L41
+V58hMFb_0OQB_?b`C2_G]J0
+!s100 nR:WUhC]zZOz9YUP=hh402
+R9
+31
+!i10b 1
+R32
+R33
+R34
+R13
+R14
+Elsb_detect
+Z35 w1436253032
+R16
+R2
+R3
+R4
+R5
+R6
+Z36 8E:/Project/VHDL/StateMachine/IMG_LSB/LSB_DETECT.vhd
+Z37 FE:/Project/VHDL/StateMachine/IMG_LSB/LSB_DETECT.vhd
+l0
+L6
+VN;fo[nb78FHXMR=`W`UaP2
+R9
+31
+Z38 !s108 1436254368.944000
+Z39 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/IMG_LSB/LSB_DETECT.vhd|
+Z40 !s107 E:/Project/VHDL/StateMachine/IMG_LSB/LSB_DETECT.vhd|
+R13
+R14
+!s100 ^?FMD@mecj5R<@BX6ERC>2
+!i10b 1
+Aart1
+R16
+R2
+R3
+R4
+R5
+DEx4 work 10 lsb_detect 0 22 N;fo[nb78FHXMR=`W`UaP2
+l21
+L13
+VFa`_eGGbzM`[iS^bXmU290
+R9
+31
+R38
+R39
+R40
+R13
+R14
+!s100 RnX5lYHXZMe`leKK62T1K3
+!i10b 1
+Elsb_insert
+Z41 w1436252998
+R16
+R2
+R3
+R4
+R5
+R6
+Z42 8E:/Project/VHDL/StateMachine/IMG_LSB/LSB_INSERT.vhd
+Z43 FE:/Project/VHDL/StateMachine/IMG_LSB/LSB_INSERT.vhd
 l0
 L6
 VBVhe<VGQNM[KO3:?W7;aH3
 R9
 31
-Z38 !s108 1436106763.829000
-Z39 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/IMG_LSB/LSB_INSERT.vhd|
-Z40 !s107 E:/Project/VHDL/StateMachine/IMG_LSB/LSB_INSERT.vhd|
+Z44 !s108 1436254368.612000
+Z45 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/IMG_LSB/LSB_INSERT.vhd|
+Z46 !s107 E:/Project/VHDL/StateMachine/IMG_LSB/LSB_INSERT.vhd|
 R13
 R14
 !s100 FaC:JYh_<Wh7OaM?<=YlB1
@@ -198,69 +239,7 @@ R5
 DEx4 work 10 lsb_insert 0 22 BVhe<VGQNM[KO3:?W7;aH3
 l35
 L27
-V?g9zKEhAF^:VdoV3Yn6nU2
-R9
-31
-R38
-R39
-R40
-R13
-R14
-!s100 I8@^MfWLgPnJd2`RjAS:i2
-!i10b 1
-Pmytype
-R2
-R3
-R4
-R5
-w1436078881
-R6
-8E:/Project/VHDL/StateMachine/IMG_LSB/MYTYPE.vhd
-FE:/Project/VHDL/StateMachine/IMG_LSB/MYTYPE.vhd
-l0
-L5
-V_O5IRBhP;2I7=ieC?UE5V2
-R9
-31
-R13
-R14
-!s100 hPFQkoVza8Ul8e8Shb:X80
-!i10b 1
-!s108 1436106763.261000
-!s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/IMG_LSB/MYTYPE.vhd|
-!s107 E:/Project/VHDL/StateMachine/IMG_LSB/MYTYPE.vhd|
-Ergb2yuv
-Z41 w1436079469
-R16
-R2
-R3
-R4
-R5
-R6
-Z42 8E:/Project/VHDL/StateMachine/IMG_LSB/RGB2YUV.vhd
-Z43 FE:/Project/VHDL/StateMachine/IMG_LSB/RGB2YUV.vhd
-l0
-L5
-VWdT2Q:jMgnoE9SQRRWe^92
-R9
-31
-Z44 !s108 1436106763.623000
-Z45 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/IMG_LSB/RGB2YUV.vhd|
-Z46 !s107 E:/Project/VHDL/StateMachine/IMG_LSB/RGB2YUV.vhd|
-R13
-R14
-!s100 [KG`:05`:`D4gZmbYB4LD2
-!i10b 1
-Aart1
-R16
-R2
-R3
-R4
-R5
-DEx4 work 7 rgb2yuv 0 22 WdT2Q:jMgnoE9SQRRWe^92
-l19
-L15
-VQ;PP?U_T=AUZM>2NQehKF1
+V`>VD25TF??^HcA>hITh>R2
 R9
 31
 R44
@@ -268,26 +247,149 @@ R45
 R46
 R13
 R14
-!s100 eIgnI>XRGGUFhV0_h^0_;2
+!s100 dCHP?o5ZdS>bNB8_BS?Qi1
 !i10b 1
-Eyuv2rgb
-Z47 w1436080357
+Pmytype
+R2
+R3
+R4
+R5
+Z47 w1436232504
+R6
+Z48 8E:/Project/VHDL/StateMachine/IMG_LSB/MYTYPE.vhd
+Z49 FE:/Project/VHDL/StateMachine/IMG_LSB/MYTYPE.vhd
+l0
+L5
+VB8:XWP6:hAT7<2g^Di6b40
+R9
+31
+b1
+Z50 !s108 1436254367.274000
+Z51 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/IMG_LSB/MYTYPE.vhd|
+Z52 !s107 E:/Project/VHDL/StateMachine/IMG_LSB/MYTYPE.vhd|
+R13
+R14
+!s100 zaXWQEl7SmKlg@4ViaDG@0
+!i10b 1
+Bbody
+R16
+R2
+R3
+R4
+R5
+l0
+L10
+V8^X81P`ZDBnRhT_Ufm;=i3
+R9
+31
+R50
+R51
+R52
+R13
+R14
+nbody
+!s100 PJYU<zgFmR?ONK:IJ`67M0
+!i10b 1
+Ergb2yuv
+Z53 w1436186604
 R16
 R2
 R3
 R4
 R5
 R6
-Z48 8E:/Project/VHDL/StateMachine/IMG_LSB/YUV2RGB.vhd
-Z49 FE:/Project/VHDL/StateMachine/IMG_LSB/YUV2RGB.vhd
+Z54 8E:/Project/VHDL/StateMachine/IMG_LSB/RGB2YUV.vhd
+Z55 FE:/Project/VHDL/StateMachine/IMG_LSB/RGB2YUV.vhd
+l0
+L5
+VG9?`nZjPGO^Sh]BT3F=o>3
+R9
+31
+Z56 !s108 1436254368.373000
+Z57 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/IMG_LSB/RGB2YUV.vhd|
+Z58 !s107 E:/Project/VHDL/StateMachine/IMG_LSB/RGB2YUV.vhd|
+R13
+R14
+!s100 7Q]maEHH1baaIo<oSaa_:1
+!i10b 1
+Aart1
+R16
+R2
+R3
+R4
+R5
+DEx4 work 7 rgb2yuv 0 22 G9?`nZjPGO^Sh]BT3F=o>3
+l17
+L16
+VmDeDZYkAL_8S43FDLE0P[1
+R9
+31
+R56
+R57
+R58
+R13
+R14
+!s100 @kYCoGQ@i`0FDXiICNOeQ2
+!i10b 1
+Eunhide_str
+Z59 w1436230868
+R16
+R2
+R3
+R4
+R5
+R6
+Z60 8E:/Project/VHDL/StateMachine/IMG_LSB/UNHIDE_STR.vhd
+Z61 FE:/Project/VHDL/StateMachine/IMG_LSB/UNHIDE_STR.vhd
+l0
+L6
+VZ7ZnOd@?XKo4Ze?N2?IQ52
+R9
+31
+Z62 !s108 1436254367.550000
+Z63 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/IMG_LSB/UNHIDE_STR.vhd|
+Z64 !s107 E:/Project/VHDL/StateMachine/IMG_LSB/UNHIDE_STR.vhd|
+R13
+R14
+!s100 :<ifcNPTLM[L?H=:YFE@G1
+!i10b 1
+Aart1
+R16
+R2
+R3
+R4
+R5
+DEx4 work 10 unhide_str 0 22 Z7ZnOd@?XKo4Ze?N2?IQ52
+l22
+L19
+V8320R32J;;==FH6D<>NXM3
+R9
+31
+R62
+R63
+R64
+R13
+R14
+!s100 O4aEdT>5AU8A5hA0WR5@K1
+!i10b 1
+Eyuv2rgb
+Z65 w1436107645
+R16
+R2
+R3
+R4
+R5
+R6
+Z66 8E:/Project/VHDL/StateMachine/IMG_LSB/YUV2RGB.vhd
+Z67 FE:/Project/VHDL/StateMachine/IMG_LSB/YUV2RGB.vhd
 l0
 L6
 V?2iB4250B>GTc>H_PIQi<1
 R9
 31
-Z50 !s108 1436106763.409000
-Z51 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/IMG_LSB/YUV2RGB.vhd|
-Z52 !s107 E:/Project/VHDL/StateMachine/IMG_LSB/YUV2RGB.vhd|
+Z68 !s108 1436254368.110000
+Z69 !s90 -reportprogress|300|-93|-work|work|E:/Project/VHDL/StateMachine/IMG_LSB/YUV2RGB.vhd|
+Z70 !s107 E:/Project/VHDL/StateMachine/IMG_LSB/YUV2RGB.vhd|
 R13
 R14
 !s100 WjS0z=ndRcKmYVKCh>@jb0
@@ -301,13 +403,13 @@ R5
 DEx4 work 7 yuv2rgb 0 22 ?2iB4250B>GTc>H_PIQi<1
 l17
 L16
-V@49PW@g0WCkfKTYYnhL>n2
+VZk0[m]DVC98PoXLHIcj9@1
 R9
 31
-R50
-R51
-R52
+R68
+R69
+R70
 R13
 R14
-!s100 MH6@SWXjXl>kg;`LCooZ02
+!s100 0I^OD1GZ43Q`aB8`7TFCK1
 !i10b 1
