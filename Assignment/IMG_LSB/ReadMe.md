@@ -10,11 +10,11 @@ Requirements: use VHDL language to design an image processing system that can pe
 
    3. The three sequences:
 
-   - Sequence 1: 01101
+	  - Sequence 1: 01101
 
-   - Sequence 2: 10101
+	  - Sequence 2: 10101
 
-   - Sequence 3: 11001
+      - Sequence 3: 11001
 
    4. Input ports include three-coordinate value signal, respectively, as the starting position of the three sequences embedded
 
