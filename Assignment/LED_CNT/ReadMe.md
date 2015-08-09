@@ -1,6 +1,6 @@
 # Assignment 2 #
 
-Complete count display circuit.
+Complete Count Display Circuit.
 
 Design requirements:
 
