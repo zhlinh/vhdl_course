@@ -1,12 +1,10 @@
 # vhdl_course
-==================
+--------------
 
-Exercise
-------------------
+## Exercise
 etc.
 
-Assignment
-------------------
+## Assignment
 
 1. Binary Sequence Detector
 
@@ -19,3 +17,13 @@ Assignment
 3. [Digital Frequency Meter](https://github.com/zhlinh/vhdl_course/tree/master/Assignment/FREQ_CNT)
 
 4. [Image LSB Embedding and Detection (Final Exam)](https://github.com/zhlinh/vhdl_course/tree/master/Assignment/IMG_LSB)
+
+-------------------
+-------------------
+The End.
+
+zhlinh
+
+Email: zhlinhng@gmail.com
+
+2015-07-08
