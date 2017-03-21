@@ -8,9 +8,9 @@ etc.
 
 1. Binary Sequence Detector
 
-  1.1  [State Machine for Given Binary Sequence Detector (1110010)](https://github.com/zhlinh/vhdl_course/tree/master/Assignment/CHKSEQ)
+    1.1 [State Machine for Given Binary Sequence (1110010) Detector](https://github.com/zhlinh/vhdl_course/tree/master/Assignment/CHKSEQ)
 
-  1.2  [3-bit Arbitrary Binary Sequence Detector](https://github.com/zhlinh/vhdl_course/tree/master/Assignment/CHK_3BIT)
+    1.2 [3-bit Arbitrary Binary Sequence Detector (Optional)](https://github.com/zhlinh/vhdl_course/tree/master/Assignment/CHK_3BIT)
 
 2. [Count Display Circuit](https://github.com/zhlinh/vhdl_course/tree/master/Assignment/LED_CNT)
 
